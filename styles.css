@@ -1,0 +1,84 @@
+body{
+    
+    width: 90%;
+    margin: 0 auto;
+    background-color: powderblue;
+
+}
+
+body h1{
+    text-align: center;
+}
+
+header h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1em;
+}
+
+.cod-decod{
+    
+    width: 50%;
+    margin: 0 auto;
+    
+}
+
+.textIn{
+    width: 100%;
+    height: 90px;
+    border: none;
+
+    box-shadow: 8px 20px 10px steelblue;
+}
+
+#bt-codi{
+    width: 7rem;
+    margin: 2rem;
+    padding: 0.5rem;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+#bt-codi:hover{
+    background-color: blue;
+    color: white;
+    transform: scale(1.4);
+    transition: 3s;
+    
+}
+
+#bt-decodi{
+    width: 7rem;
+    margin: 2rem;
+    padding: 0.5rem;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+#bt-decodi:hover{
+    background-color: blue;
+    color: white;
+    transform: scale(1.4);
+    transition: 3s;
+    
+}
+
+.textOut{
+    width: 100%;
+    height: 90px;
+    border: none;
+
+    box-shadow: 8px 20px 10px steelblue;
+}
+
+.msg-final{
+    
+    width: 50%;
+    margin: 0 auto;
+}
+
+textarea{
+    background-color: lightblue;
+}

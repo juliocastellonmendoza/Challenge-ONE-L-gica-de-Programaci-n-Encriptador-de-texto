@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificadory decodificador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>ALURA LATAM -ORACLE</h1>
+    </header>
+
+    <h1>Texto para codificar</h1>
+
+    <div class="cod-decod">
+        <textarea name="tex" id="tex" cols="30" rows="5" class="textIn"></textarea>
+        
+        <input type="button" value="codi" id="bt-codi">
+        <input type="button" value="decodi" id="bt-decodi">     
+    </div>
+    
+    <h1>Mensaje</h1>
+    <div class="msg-final">
+        <textarea name="msg" id="msg" cols="30" rows="5" class="textOut" placeholder="No se Ha encontrado texto, ingreselo y pulse en el botón que desee!"></textarea>
+        
+    </div>
+
+    <script>
+        
+        function codifi(){
+            var text=document.querySelector("#tex").value;
+            var textCodi=text.replace(/a/gi, "ant").replace(/e/gi, "ent").replace(/i/gi, "inc").replace(/o/gi, "onl").replace(/u/gi, "ull");
+            document.querySelector(".textOut").value = textCodi;
+            document.querySelector("#tex").value;
+        }
+
+        var bt1 = document.querySelector("#bt-codi");
+        bt1.onclick = codifi;
+
+        function decodifi(){
+            var text=document.querySelector("#tex").value;
+            var textCodi=text.replace(/ant/gi, "a").replace(/ent/gi, "e").replace(/inc/gi, "i").replace(/onl/gi, "o").replace(/ull/gi, "u");
+            document.querySelector(".textOut").value = textCodi;
+            document.querySelector("#tex").value;
+        }
+
+        var bt2 = document.querySelector("#bt-decodi");
+        bt2.onclick = decodifi;
+    </script>
+    
+</body>
+</html>
